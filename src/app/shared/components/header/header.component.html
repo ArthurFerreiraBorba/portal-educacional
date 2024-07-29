@@ -1,0 +1,10 @@
+<header> 
+    <img id="logo" src="logo.png">
+    <div id="usuarioDiv">
+        <p id="nome">{{ usuario.nome }}</p>
+        <img id="usuario" (click)="mudarDisplay()" src="usuario.png">
+        <div>
+            <a #sair id="sair"  [routerLink]="['/login']" routerLinkActive="router-link-active" >sair</a>
+        </div>
+    </div>
+</header>

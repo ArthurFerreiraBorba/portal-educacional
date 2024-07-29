@@ -1,0 +1,43 @@
+header {
+    background-color: #bcbcbc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sair {
+    display: none;
+    position: absolute;
+    padding: 10px 20px;
+    top: 11vh;
+    margin-right: 1vw;
+    right: 0;
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+#logo {
+    margin-left: 2vw;
+}
+#usuarioDiv {
+    display: flex;
+    align-items: center;
+    #nome {
+        margin-right: 1vw;
+    }
+    #usuario {
+        margin-right: 1vw;
+    }
+}

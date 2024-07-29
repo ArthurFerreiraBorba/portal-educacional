@@ -1,0 +1,27 @@
+<div id="cadastro">
+    <form id="formCadastro" [formGroup]="formCadastro">
+        <div>
+            <label for="inputSenha">Nome completo:</label>
+            <input type="text" id="inputNome"formControlName="nome">
+        </div>
+        <div>
+            <label for="inputSenha">Senha:</label>
+            <input type="text" id="inputCpf"formControlName="cpf">
+        </div>
+        <div>
+            <label for="inputEmail">E-mail:</label>
+            <input type="text" id="inputEmail" formControlName="email">
+        </div>
+        <div>
+            <label for="inputSenha">Senha:</label>
+            <input type="text" id="inputCelular"formControlName="celular">
+        </div>
+        <div>
+            <label for="inputSenha">Curso:</label>
+            <select type="text" id="inputCurso" formControlName="curso">
+                <option *ngFor = "let curso of cursos" [ngValue]="curso"> {{ curso.nome }}</option>
+            </select>
+        </div>
+        <button (click)="salvar()">Salvar</button>
+    </form>
+</div>

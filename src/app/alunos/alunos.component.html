@@ -1,0 +1,24 @@
+<div id="alunos">
+    <label for="barraPesquisa"></label>
+    <input type="text" id="barraPesquisa" [(ngModel)]="pesquisa">
+
+    <div id="divTabela">
+        <table id="tabelaAlunos">
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Email</th>
+                <th>Curso</th>
+                <th>Ações</th>
+            </tr>
+            <tr *ngFor="let usuario of listaPesquisaUsuarios">
+                <td>{{ usuario.nome }}</td>
+                <td>{{ usuario.cpf }}</td>
+                <td>{{ usuario.email }}</td>
+                <td>{{ usuario.curso }}</td>
+                <td> <button id="editar">Editar</button> <button>Excluir</button> </td>
+            </tr>
+        </table>
+    </div>
+    <button (click)="pesquisarAluno()">pesquisar</button>
+</div>

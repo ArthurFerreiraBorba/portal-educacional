@@ -1,0 +1,12 @@
+<table id="tabelaAlunos">
+    <tr>
+        <th>Materia</th>
+        <th>1° Semestre</th>
+        <th>2° Semestre</th>
+    </tr>
+    <tr *ngFor="let curso of cursos">
+        <td>{{ curso.nome }}</td>
+        <td>{{ curso.semastre1 }}</td>
+        <td>{{ curso.semastre2 }}</td>
+    </tr>
+</table>

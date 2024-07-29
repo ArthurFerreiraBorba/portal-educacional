@@ -1,0 +1,14 @@
+<div id="login">
+    <form id="formLogin" [formGroup]="formLogin">
+        <div id="getEmail">
+            <label for="inputEmail">E-mail:</label>
+            <input type="text" id="inputEmail" formControlName="email">
+        </div>
+        <div id="getSenha">
+            <label for="inputSenha">Senha:</label>
+            <input type="text" id="inputSenha"formControlName="senha">
+        </div>
+        <button (click)="entrar()">Entrar</button>
+        <button (click)="esqueciSenha()">Esquici a senha</button>
+    </form>
+</div>

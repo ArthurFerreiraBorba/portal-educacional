@@ -1,0 +1,19 @@
+
+    <mat-sidenav-container
+        class="example-container" (backdropClick)="close('backdrop')">
+      <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
+        <p><button mat-button (click)="close('toggle button')"><</button></p>
+        <div class="separador"></div>
+        <p class="sidenavText">Disiplinas</p>
+        <p class="sidenavText">Atividades Avaliativas</p>
+        <p class="sidenavText">Biblioteca Online</p>
+        <p class="sidenavText">Usuários</p>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+        <router-outlet>
+          <app-header></app-header>
+          <button (click)="sidenav.open()" id="botaoSidenav">></button>
+        </router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
